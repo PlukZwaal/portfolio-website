@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #111;
+  padding: 2rem;
+}
+.container {
+  max-width: 720px;
+  text-align: center;
+  line-height: 1.8;
+}
+h1 {
+  font-size: 2.4rem;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  color: #000;
+}
+h1 span {
+  font-weight: 700;
+  color: #000;
+}
+p {
+  font-size: 1.15rem;
+  color: #333;
+  margin-bottom: 1.2rem;
+}
+p em {
+  font-style: italic;
+}
+p strong {
+  font-weight: bold;
+}
+p u {
+  text-decoration: underline;
+}
+.icons {
+  margin-top: 2rem;
+}
+.icons a {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  filter: invert(0%);
+  transition: transform 0.2s ease;
+}
+.icons a:hover {
+  transform: scale(1.2);
+}
