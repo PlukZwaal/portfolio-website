@@ -7,7 +7,102 @@
   <meta name="keywords" content="Pluk Zwaal">
   <meta name="author" content="Pluk Zwaal">
   <title>Pluk Zwaal</title>
-  <link rel="stylesheet" href="style.css"/>
+  <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        font-family: 'Arial', sans-serif;
+        background: linear-gradient(135deg, #faf8ff 0%, #f3f0ff 50%, #eef2ff 100%);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #333;
+        padding: 20px;
+    }
+    .container {
+        max-width: 800px;
+        width: 100%;
+        padding: clamp(20px, 5vw, 40px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: clamp(20px, 4vw, 30px);
+    }
+    
+    .logo {
+        display: flex;
+        justify-content: center;
+        margin-bottom: clamp(10px, 2vw, 20px);
+    }
+    
+    .profile-photo {
+        width: clamp(120px, 15vw, 180px);
+        height: clamp(160px, 20vw, 240px);
+        object-fit: cover;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    .content {
+        width: 100%;
+        line-height: 1.6;
+        text-align: center;
+    }
+    .title {
+        font-size: clamp(1.2rem, 3vw, 1.5rem);
+        font-weight: 400;
+        margin-bottom: clamp(15px, 4vw, 25px);
+        color: #444;
+        max-width: 100%;
+    }
+    .description {
+        font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+        color: #888;
+        margin-bottom: clamp(20px, 5vw, 30px);
+        max-width: 100%;
+    }
+    .link {
+        color: #666;
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+        transition: border-bottom-color 0.3s ease;
+    }
+    .link:hover {
+        border-bottom-color: #666;
+    }
+    .highlight {
+        color: #666;
+        font-weight: 500;
+    }
+    
+    /* Extra responsive breakpoints */
+    @media (max-width: 480px) {
+        .container {
+            padding: clamp(15px, 4vw, 25px);
+        }
+        .title {
+            font-size: clamp(1rem, 4vw, 1.2rem);
+            line-height: 1.5;
+        }
+        .description {
+            font-size: clamp(0.85rem, 3.5vw, 1rem);
+            line-height: 1.6;
+        }
+    }
+    
+    @media (min-width: 1200px) {
+        .title {
+            font-size: 1.6rem;
+        }
+        .description {
+            font-size: 1.2rem;
+        }
+    }
+  </style>
 </head>
 <body>
     <div class="container">
