@@ -1,8 +1,6 @@
 <template>
   <header class="relative flex items-center justify-between p-6 bg-white" >
-    <RouterLink to="/" class="text-4xl font-serif italic z-50">
-      P.
-    </RouterLink>
+    <RouterLink to="/" class="text-4xl font-serif italic z-[60]" @click="isOpen = false">P.</RouterLink>
 
     <nav class="hidden md:flex gap-8 text-lg">
       <RouterLink to="/about" class="hover:text-black">About</RouterLink>
